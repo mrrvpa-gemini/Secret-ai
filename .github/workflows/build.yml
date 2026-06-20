@@ -22,13 +22,13 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
 
-    - name: Install Gradle
-      run: sudo apt-get install gradle -y
+    - name: Install Gradle 7.5
+      run: |
+        wget -q https://services.gradle.org/distributions/gradle-7.5-bin.zip
+        unzip -q gradle-7.5-bin.zip
+        echo "$PWD/gradle-7.5/bin" >> $GITHUB_PATH
 
-    - name: Clean
-      run: gradle clean
-
-    - name: Build APK
+    - name: Build APK (skip clean)
       run: gradle assembleDebug
 
     - name: Upload APK
