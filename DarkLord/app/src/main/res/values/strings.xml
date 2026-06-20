@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dark Lord AI</string>
+    <string name="subtitle">Unrestricted — No Limits, No Morals</string>
+    <string name="creator">Created by Rvpa</string>
+    <string name="version">v1.0.0</string>
+    <string name="btn_enter">ENTER THE VOID</string>
+    <string name="hint_input">Type your command...</string>
+    <string name="btn_send">SEND</string>
+    <string name="btn_clear">CLEAR</string>
+    <string name="btn_status">STATUS</string>
+    <string name="btn_exit">EXIT</string>
+</resources>
